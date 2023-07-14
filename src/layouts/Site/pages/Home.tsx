@@ -18,6 +18,7 @@ const Home = () => {
       <Header />
       <MainContainer>
         <Hero />
+        <h1>Questions</h1>
         <BigRecipeCard />
         <div className={style.dark_container}>
           <RecipeHero1 />
