@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@font-face {
+  font-family: F_bold;
+  src: url(./../utils/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: logo;
+  src: url(./../utils/fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: F_light;
+  src: url(./../utils/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: F_regular;
+  src: url(./../utils/fonts/Poppins-SemiBold.ttf);
+}
+
+:root {
+  --first_color: #fefffe;
+  --secondary_color: #f1e6d6;
+  --secondary_transparent: #f7efe481;
+  --tertiary_color: #e6fbfe;
+  --accent_color: hsl(186, 22%, 17%);
+  --accent_lite: #547e83;
+  --logo_color: #fe7f2d;
+  --green_light_color: #cde4d6;
+  --green_dark_color: #32b768;
+  --step-0: clamp(0.88rem, calc(1.03rem + -0.2vw), 1rem);
+  --step-1: clamp(1.2rem, calc(1.19rem + 0.06vw), 1.24rem);
+  --step-2: clamp(1.44rem, calc(1.36rem + 0.51vw), 1.75rem);
+  --step-3: clamp(1.73rem, calc(1.53rem + 1.22vw), 2.47rem);
+  --step-4: clamp(2.07rem, calc(1.7rem + 2.33vw), 3.5rem);
+  --sm_border_radius: 5px;
+  --lg_border_radius: 10px;
+  --xl_border_radius: 15px;
+  --xxl_border_radius: 4rem;
+}
+
+body {
+  font-family: F_light;
+  background-color: var(--first_color) !important;
+}
+
+.star_rating {
+  width: 30px;
+}
+
+.Title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .herobg {
+    background: none;
+  }
+}
